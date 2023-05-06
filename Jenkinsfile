@@ -25,9 +25,8 @@ pipeline {
                         sh "kubectl apply -f mongo-secret.yaml"
                         sh "kubectl apply -f mongo-configmap.yaml"
                         sh "kubectl apply -f mongo.yaml"
-                        sh "kubectl apply -f mongo-service.yaml"
                         sh "kubectl apply -f mongo-express.yaml"
-                        sh "kubectl apply -f mongo-express-service.yaml"
+                    
                     }
                 }
             }
